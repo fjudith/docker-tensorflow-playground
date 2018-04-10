@@ -1,4 +1,4 @@
-FROM node:9.11
+FROM amd64/node:9.11
 
 LABEL maintainer="Florian JUDITH <florian.judith.b@gmail.com"
 
