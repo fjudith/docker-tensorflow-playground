@@ -2,7 +2,7 @@ FROM amd64/node:10.10-alpine
 
 LABEL maintainer="Florian JUDITH <florian.judith.b@gmail.com"
 
-RUN apk add git \
+RUN apk add git && \
     cd /usr/share/ && \
     git clone https://github.com/tensorflow/playground
 
