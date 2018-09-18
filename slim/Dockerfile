@@ -2,7 +2,8 @@ FROM amd64/node:10.10-slim
 
 LABEL maintainer="Florian JUDITH <florian.judith.b@gmail.com"
 
-RUN apt-get update -yqq && apt-get install --no-install-recommends git && \
+RUN apt-get update -yqq && \
+    apt-get install --no-install-recommends git && \
     cd /usr/share/ && \
     git clone https://github.com/tensorflow/playground && \
     apt-get remove -y --purge git && \
